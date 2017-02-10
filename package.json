@@ -1,0 +1,26 @@
+{
+  "name": "koa-easy-router",
+  "version": "1.0.0",
+  "description": "koa router",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vanpipy/koa-easy-router.git"
+  },
+  "keywords": [
+    "koa",
+    "easy",
+    "router"
+  ],
+  "author": "vanpiy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vanpipy/koa-easy-router/issues"
+  },
+  "homepage": "https://github.com/vanpipy/koa-easy-router#readme"
+}
