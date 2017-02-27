@@ -5,10 +5,12 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
-    "koa": "^2.0.1"
+    "koa": "^2.0.1",
+    "mocha": "^3.2.0",
+    "supertest": "^3.0.0"
   },
   "scripts": {
-    "test": "npm test"
+    "test": "NODE_ENV=test ./node_modules/mocha/bin/mocha test/*.spec.js"
   },
   "repository": {
     "type": "git",
