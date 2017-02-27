@@ -4,7 +4,9 @@
   "description": "koa router",
   "main": "index.js",
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "koa": "^2.0.1"
+  },
   "scripts": {
     "test": "npm test"
   },
