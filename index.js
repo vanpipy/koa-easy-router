@@ -1,5 +1,15 @@
 'use strict';
 
+const methods = [
+    'HEAD',
+    'OPTIONS',
+    'GET',
+    'PUT',
+    'PATCH',
+    'POST',
+    'DELETE'
+];
+
 function Router () {
     return this;
 }
