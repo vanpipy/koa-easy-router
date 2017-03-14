@@ -35,6 +35,8 @@ Router.prototype.route = function () {
                 return next().then(stack.func(ctx, next));
             }
         }
+
+        return next();
     };
 
     return dispatch;
