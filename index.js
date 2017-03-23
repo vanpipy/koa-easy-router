@@ -23,7 +23,7 @@ function Router() {
     return this;
 }
 
-Router.prototype.route = function () {
+Router.prototype.routes = function () {
     const _Router = this;
 
     const dispatch = (ctx, next) => {
