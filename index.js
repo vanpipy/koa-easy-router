@@ -32,7 +32,7 @@ Router.prototype.routes = function () {
             const stack = _Router.stacks[i];
 
             if (stack.method === ctx.req.method && stack.path === ctx.req.url) {
-                return next().then(stack.func(ctx, next));
+                return Promise.resolve(stack.func(ctx, next));
             }
         }
 
