@@ -3,7 +3,9 @@
   "version": "1.0.1",
   "description": "koa router",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "path-to-regexp": "^1.7.0"
+  },
   "devDependencies": {
     "koa": "^2.0.1",
     "mocha": "^3.2.0",
