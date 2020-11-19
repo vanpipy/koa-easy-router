@@ -26,6 +26,12 @@ router.get('/query', (ctx, next) => {
     return next();
 });
 
+router.get('/query', (ctx, next) => {
+    ctx.res.statusCode = 200;
+    ctx.res.write(JSON.stringify(ctx.request.query));
+    ctx.res.end();
+});
+
 app.use(router.routes());
 
 module.exports = app;
