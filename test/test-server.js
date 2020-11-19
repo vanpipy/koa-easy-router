@@ -21,6 +21,6 @@ router.post('/post', (ctx, next) => {
     ctx.res.end();
 });
 
-app.use(router.route());
+app.use(router.routes());
 
 module.exports = app;
