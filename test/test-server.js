@@ -6,7 +6,7 @@ const Router = require('../index.js');
 const router = new Router();
 
 router.get('/200', (ctx, next) => {
-    ctx.res.statusCode = 200;
+    ctx.status = 200;
     return next();
 });
 
@@ -16,9 +16,14 @@ router.get('/400', (ctx, next) => {
 });
 
 router.post('/post', (ctx, next) => {
-    ctx.res.statusCode = 200;
-    ctx.res.write(JSON.stringify({ whoyouare: 'POST' }));
-    ctx.res.end();
+    ctx.status = 200;
+    return next();
+});
+
+router.get('/query', (ctx, next) => {
+    ctx.status = 200;
+    ctx.body = ctx.query;
+    return next();
 });
 
 app.use(router.routes());
